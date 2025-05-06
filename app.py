@@ -1,7 +1,7 @@
 from flask import Flask, request
 import json
 import random
-import vk_api
+import vk
 
 app = Flask(__name__)
 
