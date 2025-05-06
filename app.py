@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Токены из настроек твоей группы
 confirmation_token = 'f52f1088'  # Токен для подтверждения от VK
-token = 'ВАШ_ТОКЕН_ГРУППЫ'       # Токен для отправки сообщений
+token = 'vk1.a.69EGRWB1sbkT5O5nNF5WLcI9rsjx9_gDHPEcWWAQvL26fMZVkzKmoHM4fBNQMGjLhkQDAD-0NU16OALmxM_HmsyF0gDykLWuIjU1YV5ZlyWqQZD_r_8qTKp8NYsH8-04_9d9q1UA6IvBbj4_qd8a5o_F4Fr75eSGKWyw0x1kt1XfhW_W3GEaEC_u2Nt2lcH7kv7qo8wdQatf6BzohS5asA'       # Токен для отправки сообщений
 
 @app.route('/callback', methods=['POST'])
 def processing():
