@@ -2,34 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Список задач</title>
-  <style>
-    .completed {
-      text-decoration: line-through;
-      color: gray;
-    }
-  </style>
+  <title>bot</title>
 </head>
 <body>
-  <h1>Список задач</h1>
-  <ul id="todoList"></ul>
 
-  <script>
-    // Загрузка данных из JSON-файла
-    fetch('todos.json')
-      .then(response => response.json())
-      .then(data => {
-        const list = document.getElementById('todoList');
-        data.forEach(todo => {
-          const li = document.createElement('li');
-          li.textContent = todo.title;
-          if (todo.completed) {
-            li.classList.add('completed');
-          }
-          list.appendChild(li);
-        });
-      })
-      .catch(error => console.error('Ошибка загрузки:', error));
-  </script>
 </body>
 </html>
